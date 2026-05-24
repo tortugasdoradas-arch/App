@@ -1,0 +1,2911 @@
+"""
+componentes_data.py - Datos de componentes embebidos
+Este archivo es generado automáticamente. No modificar manualmente.
+"""
+
+import json
+
+_COMPONENTES_JSON = r'''
+{
+  "Atmosphere_1.11.1_PKU": {
+    "asset_info": {
+      "version": "22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "a- Paquete Unico (Exclusivo al seleccionar algun paquete unico)",
+    "description": "Atmosphere con las mejores configuraciones",
+    "name": "Atmosphere - 1.11.1",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Unico/PkAtmo.zip",
+    "source_type": "direct_url"
+  },
+  "Atmosphere_Parches_Homebrew": {
+    "asset_info": {
+      "version": "22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "a- Paquete Unico (Exclusivo al seleccionar algun paquete unico)",
+    "description": "Todas las aplicaciones homebrew funcionaran, no importa si estan actualizadas o no, el parche las hara compatibles con cualquier firmware",
+    "name": "Atmosphere - Parches Aplicaciones Homebrew Viejas",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Unico/PkParchesHome.zip",
+    "source_type": "direct_url"
+  },
+  "Atmosphere_Parches_Sistema Integrados": {
+    "asset_info": {
+      "version": "22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "a- Paquete Unico (Exclusivo al seleccionar algun paquete unico)",
+    "description": "Parches para hacer funcionar los juegos integrados en el codigo de atmosphere para mejor estabilidad",
+    "name": "Atmosphere - Parches del Sistema Integrados",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Unico/PkParchesEmb.zip",
+    "source_type": "direct_url"
+  },
+  "Atmosphere_Parches_Forwarders": {
+    "asset_info": {
+      "version": "22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "a- Paquete Unico (Exclusivo al seleccionar algun paquete unico)",
+    "description": "Los accesos directos (forwarders) viejos que tengamos, funcionaran en cualquier firmware, sin importar si esta actualizado o no",
+    "name": "Atmosphere - Parches Forwarders Viejos",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Unico/PkParchesForwa.zip",
+    "source_type": "direct_url"
+  },
+  "Atmosphere_Parches_Memoria": {
+    "asset_info": {
+      "version": "22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "a- Paquete Unico (Exclusivo al seleccionar algun paquete unico)",
+    "description": "Los firmwares mas actuales limitan la cantidad de memoria disponible, con estos parches opcionales puedes ganar 1.85 megas o 40 megas de memoria en el sistema, ideal para jugar juegos con mods pesados",
+    "name": "Atmosphere - Parches Memoria",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Unico/PkParchesMemoria.zip",
+    "source_type": "direct_url"
+  },
+  "Hekate_Esp": {
+    "asset_info": {
+      "version": "6.5.2"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "a- Paquete Unico (Exclusivo al seleccionar algun paquete unico)",
+    "description": "Hekate en Español, y con boton de acceso rapido a la conexion USB",
+    "name": "Hekate en Español",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Unico/hekatePkunico.zip",
+    "source_type": "direct_url"
+  },
+  "Configuraciones_PkUnico_Basico": {
+    "asset_info": {
+      "version": "22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "b- Paquete Unico Configuraciones (Exclusivo al seleccionar algun paquete unico)",
+    "description": "Configuraciones especificas del paquete basico que seleccionaste",
+    "name": "Configuraciones Pk Unico Basico",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Unico/PkconfigBasico.zip",
+    "source_type": "direct_url"
+  },
+  "Configuraciones_PkUnico_Completo": {
+    "asset_info": {
+      "version": "22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "b- Paquete Unico Configuraciones (Exclusivo al seleccionar algun paquete unico)",
+    "description": "Configuraciones especificas del paquete completo que seleccionaste",
+    "name": "Configuraciones Pk Unico Completo",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Unico/PkconfigCompleto.zip",
+    "source_type": "direct_url"
+  },
+  "Configuraciones_PkUnico_Ultra": {
+    "asset_info": {
+      "version": "22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "b- Paquete Unico Configuraciones (Exclusivo al seleccionar algun paquete unico)",
+    "description": "Configuraciones especificas del paquete ultra que seleccionaste",
+    "name": "Configuraciones Pk Unico Ultra",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Unico/PkconfigUltra.zip",
+    "source_type": "direct_url"
+  },
+  "Administrador_Overclock": {
+    "asset_info": {
+      "version": "N/A"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "c- Paquete Unico Complementos (Exclusivo al seleccionar algun paquete unico)",
+    "description": "Administrador que se usa desde el menu switch scene para cambiar de plantillas de overclock, o crear tu propia configuracion",
+    "name": "Administrador Overclock (Exclusivo Paquete Ultra)",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Unico/adminOverclock.zip",
+    "source_type": "direct_url"
+  },
+  "Opciones_Extras": {
+    "asset_info": {
+      "version": "22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "c- Paquete Unico Complementos (Exclusivo al seleccionar algun paquete unico)",
+    "description": "Desde el menu switch scene podran instalar aplicaciones, firmwares, compatibilidad con controles xbox, configuraciones del paquete y muchas cosas mas",
+    "name": "Opciones Extras Pk Unico",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Unico/PkOpciExtra.zip",
+    "source_type": "direct_url"
+  },
+  "Parches_Overclock": {
+    "asset_info": {
+      "version": "N/A"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "c- Paquete Unico Complementos (Exclusivo al seleccionar algun paquete unico)",
+    "description": "Parches necesarios para lograr un overclock real en la consola (Loader.kip)",
+    "name": "Parches Overclock Real (Exclusivo Paquete Ultra)",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Unico/parcheOverclock.zip",
+    "source_type": "direct_url"
+  },
+  "Ultracam": {
+    "asset_info": {
+      "version": "22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "c- Paquete Unico Complementos (Exclusivo al seleccionar algun paquete unico)",
+    "description": "Ultracam es un mod grafico para los juegos de zelda en la consola switch, permitiendo controlas FPS, calidad de texturas, sombras , distancias, etc (requiere overclock)",
+    "name": "Ultracam (Exclusivo Paquete Ultra)",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Unico/PkUltracam.zip",
+    "source_type": "direct_url"
+  },
+  "Atmosphere_Vanilla": {
+    "asset_info": {
+      "version": "1.11.1"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "atmosphere-1.11.1-master-d04c20a04+hbl-2.4.5+hbmenu-3.6.1.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          },
+          {
+            "action": "delete_file",
+            "path": "/atmosphere/reboot_payload.bin"
+          },
+          {
+            "action": "delete_file",
+            "path": "/switch/haze.nro"
+          },
+          {
+            "action": "delete_file",
+            "path": "/switch/reboot_to_payload.nro"
+          }
+        ]
+      },
+      {
+        "pattern": "fusee.bin",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/payloads/"
+          }
+        ]
+      },
+      {
+        "pattern": "fusee.bin",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/bootloader/payloads/"
+          }
+        ]
+      }
+    ],
+    "category": "d- Paquete Vanilla",
+    "default": false,
+    "description": "Atmosphere oficial, se llamada vanilla porque no incluye modificaciones ni nada extra",
+    "name": "Atmosphere Vanilla",
+    "repo": "Atmosphere-NX/Atmosphere",
+    "source_type": "github_release"
+  },
+  "Atmosphere_Vanilla_Configuraciones": {
+    "asset_info": {
+      "version": "22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "d- Paquete Vanilla",
+    "description": "Configuraciones del sistema atmosphere como usb 3.0, fix del modo sleep, cheats y muchas cosas mas)",
+    "name": "Atmosphere Vanilla Configuraciones",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/ConfigVanillaAtmos.zip",
+    "source_type": "direct_url"
+  },
+  "Hekate_Vanilla": {
+    "asset_info": {
+      "version": "v6.5.2"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "hekate_ctcaer_6.5.2_Nyx_1.9.2.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          },
+          {
+            "action": "find_and_rename",
+            "source_file_pattern": "hekate_ctcaer_6.5.2.bin",
+            "target_filename": "payload.bin",
+            "target_path": "/"
+          }
+        ]
+      },
+      {
+        "pattern": "hekate_ctcaer_6.5.2.bin",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/atmosphere/"
+          },
+          {
+            "action": "find_and_rename",
+            "source_file_pattern": "hekate_ctcaer_6.5.2.bin",
+            "target_filename": "reboot_payload.bin",
+            "target_path": "/atmosphere/"
+          }
+        ]
+      },
+      {
+        "pattern": "hekate_ctcaer_6.5.2.bin",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/payloads/"
+          }
+        ]
+      }
+    ],
+    "category": "d- Paquete Vanilla",
+    "description": "Hekate oficial, se llamada vanilla porque no incluye modificaciones ni nada extra",
+    "name": "Hekate Vanilla",
+    "repo": "CTCaer/hekate",
+    "source_type": "github_release"
+  },
+  "Hekate_Vanilla_Configuraciones": {
+    "asset_info": {
+      "version": "22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "d- Paquete Vanilla",
+    "description": "Configuraciones del menu launch para cargar el sistema stock y el sistema atmosphere)",
+    "name": "Hekate Vanilla Configuraciones",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/ConfigVanillaBootloader.zip",
+    "source_type": "direct_url"
+  },
+  "DNS_Mitm": {
+    "asset_info": {
+      "version": "v22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "e- Protecciones Antiban",
+    "description": "DNS Mitm es la proteccion de bloqueo de servidores, impide la conexion con servidores de nintendo",
+    "name": "DNS Mitm",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/host.zip",
+    "source_type": "direct_url"
+  },
+  "Exosphere": {
+    "asset_info": {
+      "version": "v22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "e- Protecciones Antiban",
+    "description": "Exosphere borra el serial de la consola para dejarlo en ceros en modo hack",
+    "name": "Exosphere",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/exo.zip",
+    "source_type": "direct_url"
+  },
+  "Sigpatches": {
+    "asset_info": {
+      "version": "22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "f- Parches Juegos",
+    "description": "Parches en forma de archivos que permiten hacer funcionar juegos",
+    "name": "Sigpatches 22.1.0",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Unico/sigpa.zip",
+    "source_type": "direct_url"
+  },
+  "SysPatch": {
+    "asset_info": {
+      "version": "v1.6.2.0"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "sys-patch-v1.6.2.0.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          },
+          {
+            "action": "find_and_rename",
+            "source_file_pattern": "sys-patch-overlay.ovl",
+            "target_filename": "20_sys-patch-overlay.ovl",
+            "target_path": "/switch/.overlays/"
+          }
+        ]
+      }
+    ],
+    "category": "f- Parches Juegos",
+    "default": false,
+    "description": "Sysmodul que parcha automaticamente el sistema durante el incio, cargando parches para juegos y configuraciones especiales",
+    "name": "Sys Patch 1.6.2",
+    "repo": "borntohonk/sys-patch",
+    "source_type": "github_release"
+  },
+  "Logos_Luigi": {
+    "asset_info": {
+      "version": "22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "g- Logos Opcionales de Luigi Pirata Pkunico",
+    "description": "Si activas esta opcion, tendras el logo de Luigi pirata durante la carga de atmosphere",
+    "name": "Logo Luigi Pirata Atmosphere",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Unico/sin.logo.zip",
+    "source_type": "direct_url"
+  },
+  "Archivos_Chip": {
+    "asset_info": {
+      "version": "v22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "h- Archivos Chip (Usa el boton para activar o desactivar)",
+    "description": "Archivos necesarios para las consolas con chip: boot.dat, boot.ini, payload.bin",
+    "name": "Archivos Carga Chip",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/chip.zip",
+    "source_type": "direct_url"
+  },
+  "Warmboot": {
+    "asset_info": {
+      "version": "v22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "h- Archivos Chip (Usa el boton para activar o desactivar)",
+    "description": "Archivos necesarios para la carga correcta del sistema en consolas chip y evitar el mal funcionamiento del modo espera de la consola",
+    "name": "Warmboot",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/warm.zip",
+    "source_type": "direct_url"
+  },
+  "Pegascape": {
+    "asset_info": {
+      "version": "v22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "i- Archivos Consolas Pegascape (Usa el boton para activar o desactivar)",
+    "description": "Archivos necesarios para la carga del hack por medio del metodo pagascape (solo para consolas con este tipo de liberacion)",
+    "name": "Pegascape",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/pega.zip",
+    "source_type": "direct_url"
+  },
+  "Consolas Kiosk": {
+    "asset_info": {
+      "version": "22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "j- Archivos Consolas Kiosk (Usa el boton para activar o desactivar)",
+    "description": "Las consolas tipo Kiosk o Quiosco, son consolas de demostracion que usan un atmosphere especial para poder cargar ( archivos solo para consolas Kiosk)",
+    "name": "Consolas Kiosk",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/kiosk.zip",
+    "source_type": "direct_url"
+  },
+  "Forwarder_Apagar_Reinicar": {
+    "asset_info": {
+      "version": "Recursos_22"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "forwardersReiniciar.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "k- Forwarders",
+    "default": false,
+    "description": "Forwarder que permite apagar o reinciar la consola desde el menu principal (instala el nsp que esta en la carpeta forwarders)",
+    "name": "Forwarder Apagar-Reinicar la consola",
+    "repo": "Luiscetina/Enlace",
+    "source_type": "github_release"
+  },
+  "Forwarders_Savegames": {
+    "asset_info": {
+      "version": "Recursos_22"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "forwardersSaves.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "k- Forwarders",
+    "default": false,
+    "description": "Forwarders para Checkpoint y JKSV (instala el nsp que esta en la carpeta forwarders)",
+    "name": "Forwarders Administradores Savegames",
+    "repo": "Luiscetina/Enlace",
+    "source_type": "github_release"
+  },
+  "Forwarders_Emuladores": {
+    "asset_info": {
+      "version": "Recursos_22"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "forwardersEmuladores.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "k- Forwarders",
+    "description": "Forwarders para los principales emuladores en la consola (FBA, Duckstation, Retroarch)",
+    "name": "Forwarders Emuladores",
+    "repo": "Luiscetina/Enlace",
+    "source_type": "github_release"
+  },
+  "Forwarders_HomebrewMenu": {
+    "asset_info": {
+      "version": "Recursos_22"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "forwarderHBmenu.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "k- Forwarders",
+    "default": false,
+    "description": "Permite tener un acceso directo al homebrew menu en la pantalla principal (instala el nsp que esta en la carpeta forwarders)",
+    "name": "Forwarders Homebrew Menu",
+    "repo": "Luiscetina/Enlace",
+    "source_type": "github_release"
+  },
+  "Forwarders_instaladores": {
+    "asset_info": {
+      "version": "Recursos_22"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "forwardersInstaladores.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "k- Forwarders",
+    "default": false,
+    "description": "Forwarders de los instaladores mas usados en la consola: DBI (Español, Ingles o Ruso), Awoo, Goldleaf, Tinwoo, Tinleaf, AtmoXL",
+    "name": "Forwarders instaladores de Juegos",
+    "repo": "Luiscetina/Enlace",
+    "source_type": "github_release"
+  },
+  "Forwarders_Dusk": {
+    "asset_info": {
+      "version": "Recursos_22"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "ForwarderZeldaDusk.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "k- Forwarders",
+    "default": false,
+    "description": "Forwarder para el juego Zelda Twilight Princess Dusk",
+    "name": "Forwarder Zelda Twilight Princess",
+    "repo": "Luiscetina/Enlace",
+    "source_type": "github_release"
+  },
+  "aio_updater": {
+    "asset_info": {
+      "version": "2.23.3"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "aio-switch-updater.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Actualiza todo desde tu Switch.",
+    "name": "AIO-Switch-Updater",
+    "repo": "HamletDuFromage/aio-switch-updater",
+    "source_type": "github_release"
+  },
+  "Amiigo": {
+    "asset_info": {
+      "version": "2.4.1"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "Amiigo.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/Amiigo/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Amiigo es una aplicación para crear y cambiar Amiibo virtuales",
+    "name": "Amiigo",
+    "repo": "CompSciOrBust/Amiigo",
+    "source_type": "github_release"
+  },
+  "AtmoXL": {
+    "asset_info": {
+      "version": "N/A"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "l- Programas Homebrew",
+    "description": "Un instalador sencillo y sin complicaciones para NSP, NSZ, XCI y XCZ en Nintendo Switch",
+    "name": "AtmoXL-Titel-Installer",
+    "processing_steps": [
+      {
+        "action": "unzip_to_path",
+        "target_path": "/switch/"
+      }
+    ],
+    "repo": "https://gbatemp.net/attachments/atmoxl-titel-installer-182-fw21-zip.541416/",
+    "source_type": "direct_url"
+  },
+  "awoo": {
+    "asset_info": {
+      "version": "1.3.6"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "Awoo-Installer.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Un instalador sencillo y sin complicaciones para NSP, NSZ, XCI y XCZ en Nintendo Switch",
+    "name": "Awoo Installer",
+    "repo": "Huntereb/Awoo-Installer",
+    "source_type": "github_release"
+  },
+  "battery_desync_fix": {
+    "asset_info": {
+      "version": "1.5.1"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "battery_desync_fix_v1.5.1.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/"
+          },
+          {
+            "action": "find_and_rename",
+            "source_file_pattern": "battery_desync_fix_v1.5.1.nro",
+            "target_filename": "battery_desync_fix.nro",
+            "target_path": "/switch/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "La aplicación te permite calibrar el circuito integrado del indicador de bateria",
+    "name": "battery_desync_fix",
+    "repo": "CTCaer/battery_desync_fix_nx",
+    "source_type": "github_release"
+  },
+  "Breeze": {
+    "asset_info": {
+      "version": "beta104.8"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "l- Programas Homebrew",
+    "description": "Una herramienta de Cheats diseñada para funcionar a la perfección con Atmosphere.",
+    "name": "Breeze",
+    "processing_steps": [
+      {
+        "action": "find_and_copy",
+        "source_file_pattern": "breeze",
+        "target_path": "/switch/"
+      },
+      {
+        "action": "delete_file",
+        "path": "/switch/breeze/.Breeze.nro.star"
+      }
+    ],
+    "repo": "https://github.com/tomvita/Breeze-Beta/releases/download/beta104.8/Breeze.zip",
+    "source_type": "direct_url"
+  },
+  "Checkpoint": {
+    "asset_info": {
+      "version": "v3.12.0"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "Checkpoint.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Gestor de partidas guardadas para Nintendo Switch",
+    "name": "Checkpoint",
+    "repo": "BernardoGiordano/Checkpoint",
+    "source_type": "github_release"
+  },
+  "Chiaki": {
+    "asset_info": {
+      "version": "2.2.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "l- Programas Homebrew",
+    "description": "Chiaki es una aplicación para el modo Remote Play de PlayStation 4 y PlayStation 5",
+    "name": "Chiaki",
+    "processing_steps": [
+      {
+        "action": "unzip_to_path",
+        "target_path": "/switch/chiaki/"
+      }
+    ],
+    "repo": "https://git.sr.ht/~thestr4ng3r/chiaki/refs/download/v2.2.0/Chiaki-v2.2.0-Switch.zip",
+    "source_type": "direct_url"
+  },
+
+  "Chiaki_Akira": {
+    "asset_info": {
+      "version": "0.5.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "l- Programas Homebrew",
+    "description": "Mod de Chiaki con algunas mejoras para el modo Remote Play de PlayStation 4 y PlayStation 5",
+    "name": "Akira Mod de Chiaki",
+    "processing_steps": [
+      {
+            "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/xlanor/akira/releases/download/v0.5.0/akira-0.5.0.zip",
+    "source_type": "direct_url"
+  },
+  "Ciberfoil": {
+    "asset_info": {
+      "version": "1.4.4"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "cyberfoil.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Instalador de juegos basado en awoo, agrega la posibilidad de agregar tiendas",
+    "name": "Ciberfoil",
+    "repo": "luketanti/CyberFoil",
+    "source_type": "github_release"
+  },
+  "DBI_Español": {
+    "asset_info": {
+      "version": "895"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "l- Programas Homebrew",
+    "description": "Instalador de aplicaciones/juegos en Español",
+    "name": "DBI Español",
+    "processing_steps": [
+      {
+        "action": "unzip_to_path",
+        "target_path": "/switch/DBI/"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/D_es.zip",
+    "source_type": "direct_url"
+  },
+  "DBI_Ingles": {
+    "asset_info": {
+      "version": "895"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "l- Programas Homebrew",
+    "description": "Instalador de aplicaciones/juegos en Ingles",
+    "name": "DBI Ingles",
+    "processing_steps": [
+      {
+        "action": "unzip_to_path",
+        "target_path": "/switch/"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/D_en2.zip",
+    "source_type": "direct_url"
+  },
+  "DBI_Ruso": {
+    "asset_info": {
+      "version": "895"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "l- Programas Homebrew",
+    "description": "Instalador de aplicaciones/juegos en Ruso",
+    "name": "DBI Ruso",
+    "processing_steps": [
+      {
+        "action": "unzip_to_path",
+        "target_path": "/switch/DBIru/"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/D_ru.zip",
+    "source_type": "direct_url"
+  },
+  "edizon_se": {
+    "asset_info": {
+      "version": "3.8.37a"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "EdiZon.zip",
+        "processing_steps": [
+          {
+            "action": "find_and_copy",
+            "source_file_pattern": "edizon",
+            "target_path": "/switch/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Un inyector y un motor de trucos y edición de memoria sobre la marcha.",
+    "name": "Edizon SE",
+    "repo": "tomvita/EdiZon-SE",
+    "source_type": "github_release"
+  },
+  "ftpd": {
+    "asset_info": {
+      "version": "v3.2.2"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "ftpd.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/FTPD/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Servidor FTP para tu Switch.",
+    "name": "FTPD Pro",
+    "repo": "DefenderOfHyrule/ftpd",
+    "source_type": "github_release"
+  },
+  "gamecard_installer": {
+    "asset_info": {
+      "version": "v2.0.7"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "gamecard_installer.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/gamecard_installer/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Una forma de instalar tus tarjetas de juego directamente en la switch",
+    "name": "gamecard_installer",
+    "repo": "DefenderOfHyrule/Gamecard-Installer-NX",
+    "source_type": "github_release"
+  },
+  "goldleaf": {
+    "asset_info": {
+      "version": "1.2.0"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "Goldleaf.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Herramienta homebrew multifuncional",
+    "name": "Goldleaf",
+    "repo": "XorTroll/Goldleaf",
+    "source_type": "github_release"
+  },
+  "HATS_Tools": {
+    "asset_info": {
+      "version": "1.5.7"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "hats-tools-1.5.7.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Una herramienta completa para Nintendo Switch, podras descargar firmware, cheats de tus juegos, desinstalar componentes, buscar archivos",
+    "name": "HATS Tools",
+    "repo": "sthetix/HATS-Tools",
+    "source_type": "github_release"
+  },
+  "haze": {
+    "asset_info": {
+      "version": "Recursos_22"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "haze.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_path",
+            "target_path": "/switch/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "default": false,
+    "description": "Herramienta para tranferir por medio USB a la sd desde la consola",
+    "name": "haze",
+    "repo": "Luiscetina/Enlace",
+    "source_type": "github_release"
+  },
+  "HekateToolbox": {
+    "asset_info": {
+      "version": "v4.0.4"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "HekateToolbox.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/HekateToolbox/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Una multi herrmienta para editar funciones de hekate y funciones de la consola",
+    "name": "HekateToolbox",
+    "repo": "WerWolv/Hekate-Toolbox",
+    "source_type": "github_release"
+  },
+  "appstore": {
+    "asset_info": {
+      "version": "v2.3.2"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "appstore.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/Appstore/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Tienda de aplicaciones, descarga nuevas aplicaciones caseras desde tu Switch.",
+    "name": "Homebrew Appstore",
+    "repo": "DefenderOfHyrule/hb-appstore",
+    "source_type": "github_release"
+  },
+  "jksv": {
+    "asset_info": {
+      "version": "12.02.2025-7b834ef"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "JKSV.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "default": false,
+    "description": "Herramienta para guardar copias de savegames y restaurarlos",
+    "name": "JKSV",
+    "repo": "gzk47/JKSV",
+    "source_type": "github_release"
+  },
+  "libnxbox": {
+    "asset_info": {
+      "version": "0.9.0-beta"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "libnxbox.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/libnxbox/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Cliente de Xbox Cloud Streaming para Nintendo Switch",
+    "name": "libnxbox",
+    "repo": "ursusworks/libnxbox",
+    "source_type": "github_release"
+  },
+  "linkalho": {
+    "asset_info": {
+      "version": "v2.0.2"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "l- Programas Homebrew",
+    "description": "Vincula tu cuenta Nintendo falsamente sin conexión.",
+    "name": "linkalho",
+    "processing_steps": [
+      {
+        "action": "unzip_to_path",
+        "target_path": "/switch/"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/link.zip",
+    "source_type": "direct_url"
+  },
+  "Moonlight": {
+    "asset_info": {
+      "version": "v1.4.0"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "Moonlight-Switch.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/Moonlight/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Este ccliente te permitirá transmitir tus juegos desde tu PC con Windows a tu Switch",
+    "name": "Moonlight",
+    "repo": "XITRIX/Moonlight-Switch",
+    "source_type": "github_release"
+  },
+  "nso-icon-tool": {
+    "asset_info": {
+      "version": "v0.4.5"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "nso-icon-tool.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/nso-icon-tool/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Crea y aplica iconos de usuario personalizados, utiliza tus propias imágenes personalizadas como icono de usuario",
+    "name": "nso-icon-tool",
+    "repo": "dslatt/nso-icon-tool",
+    "source_type": "github_release"
+  },
+  "NX-Activity-Log": {
+    "asset_info": {
+      "version": "v1.5.8"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "NX-Activity-Log.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/NX-Activity-Log/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Una aplicación que muestra información sobre tu actividad de juego.",
+    "name": "NX-Activity-Log",
+    "repo": "zdm65477730/NX-Activity-Log",
+    "source_type": "github_release"
+  },
+  "nx_shell": {
+    "asset_info": {
+      "version": "4.02"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "NX-Shell.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/NX-Shell/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Un gestor de archivos multifuncional.",
+    "name": "NX-Shell",
+    "repo": "DefenderOfHyrule/NX-Shell",
+    "source_type": "github_release"
+  },
+  "NXDumpTool": {
+    "asset_info": {
+      "version": "rewrite-prerelease"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "nxdt_rw_poc.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/"
+          },
+          {
+            "action": "find_and_rename",
+            "source_file_pattern": "nxdt_rw_poc.nro",
+            "target_filename": "NX-DumpTool.nro",
+            "target_path": "/switch/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Dumpea archivos de juegos y del sistema tanto de tarjetas de juego físicas como de títulos instalados digitalmente.",
+    "name": "NXDumpTool",
+    "repo": "DarkMatterCore/nxdumptool",
+    "source_type": "github_tag",
+    "tag": "rewrite-prerelease"
+  },
+  "Payload_Launcher": {
+    "asset_info": {
+      "version": "3.0.2"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "Payload_Launcher.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Herramienta para lanzar payloads desde la consola",
+    "name": "Payload_Launcher",
+    "repo": "suchmememanyskill/Payload_Launcher",
+    "source_type": "github_release"
+  },
+  "pkDex": {
+    "asset_info": {
+      "version": "v1.6.5"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "pkDex.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/pkDex/"
+          }
+        ]
+      },
+      {
+        "pattern": "pkDex_High_Res_imgs.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Una enciclopedia Pokemon.",
+    "name": "pkDex",
+    "repo": "Insektaure/pkDex",
+    "source_type": "github_release"
+  },
+  "Pokeswitch": {
+    "asset_info": {
+      "version": "7.0.1"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "Pokeswitch.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Editor de partidas de Pokémon diseñado para ejecutarse de forma nativa en la Nintendo Switch",
+    "name": "Pokeswitch",
+    "repo": "absrdm/Pokeswitch",
+    "source_type": "github_release"
+  },
+  "quick_reboot_app": {
+    "asset_info": {
+      "version": "V2.2.0"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "Quick-Reboot.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Aplicacion para reiniciar en hekate o apagar la consola",
+    "name": "Quick-Reboot (App)",
+    "repo": "eradicatinglove/Quick-Reboot",
+    "source_type": "github_release"
+  },
+  "Reboot to Payload": {
+    "asset_info": {
+      "version": "Recursos_22"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "reboot_to_payload.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_path",
+            "target_path": "/switch/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "default": false,
+    "description": "Herramienta para reiniciar la switch desde la consola",
+    "name": "Reboot to Payload",
+    "repo": "Luiscetina/Enlace",
+    "source_type": "github_release"
+  },
+  "reset_parental_controls": {
+    "asset_info": {
+      "version": "v1.2.1"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "reset_parental_controls.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Una forma sencilla de quitar o cambiar el código PIN del control parental de la Nintendo Switch",
+    "name": "Reset Parental Control",
+    "repo": "DefenderOfHyrule/Reset-Parental-Controls-NX",
+    "source_type": "github_release"
+  },
+  "RipJKAnimeNX": {
+    "asset_info": {
+      "version": "3.0.1"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "RipJKAnimeNX.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/"
+          }
+        ]
+      },
+      {
+        "pattern": "RipJKAnimeNX.05b9db505abbe000.v0.nsp",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/NSP_RipJKAnimeNX/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Aplicación para ver online y descargar anime a través de la Nintendo Switch.",
+    "name": "RipJKAnimeNX",
+    "repo": "darkxex/RipJKAnimeNX",
+    "source_type": "github_release"
+  },
+  "SimpleModDownloader": {
+    "asset_info": {
+      "version": "2.3.0"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "SimpleModDownloader.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Una aplicación para Switch que descarga mods de GameBanana",
+    "name": "SimpleModDownloader",
+    "repo": "PoloNX/SimpleModDownloader",
+    "source_type": "github_release"
+  },
+  "SimpleModManager": {
+    "asset_info": {
+      "version": "2.1.4"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "SimpleModManager.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Aplicaion que te permite gestionar tus mods (a través de LayeredFS).",
+    "name": "SimpleModManager",
+    "repo": "nadrino/SimpleModManager",
+    "source_type": "github_release"
+  },
+  "sphaira": {
+    "asset_info": {
+      "version": "1.0.0"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "sphaira.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Una aplicacion que incluye una tienda de aplicaciones y un explorador de archivos.",
+    "name": "Sphaira",
+    "repo": "ITotalJustice/sphaira",
+    "source_type": "github_release"
+  },
+  "90dns": {
+    "asset_info": {
+      "version": "1.0.5"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "Switch_90DNS_tester.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Comprueba si 90DNS está configurado correctamente.",
+    "name": "Switch 90DNS Tester",
+    "repo": "gzk47/Switch_90DNS_tester",
+    "source_type": "github_release"
+  },
+  "theme_injector": {
+    "asset_info": {
+      "version": "v4.8.3"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "NXThemesInstaller.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Instala y gestiona temas para Nintendo Switch.",
+    "name": "Temas Switch NX-Theme Installer",
+    "repo": "exelix11/SwitchThemeInjector",
+    "source_type": "github_release"
+  },
+
+  "theme_parches": {
+    "asset_info": {
+      "version": "22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "l- Programas Homebrew",
+    "description": "Parches para poder instalar temas en cualquier firmware",
+    "name": "Temas Switch PARCHES",
+    "processing_steps": [
+          {
+            "action": "find_and_copy",
+            "source_file_pattern": "systemPatches",
+            "target_path": "/themes/"
+          }
+    ],
+    "repo": "https://github.com/exelix11/theme-patches/archive/refs/heads/master.zip",
+    "source_type": "direct_url"
+  },
+  "SwitchWave": {
+    "asset_info": {
+      "version": "v1.1.0"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "SwitchWave-1.1.0-cc4a21f.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Un reproductor multimedia con aceleración por hardware para la Nintendo Switch",
+    "name": "SwitchWave",
+    "repo": "averne/SwitchWave",
+    "source_type": "github_release"
+  },
+  "themezer-nx": {
+    "asset_info": {
+      "version": "2.0.3"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "themezer-nx.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/themezer/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Un programa para descargar temas de Switch",
+    "name": "themezer-nx",
+    "repo": "suchmememanyskill/themezer-nx",
+    "source_type": "github_release"
+  },
+  "Tinfoil": {
+    "asset_info": {
+      "version": "20.0 v2"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "l- Programas Homebrew",
+    "description": "Instalador de juegos, administrador de tiendas de juegos (Funciona en firmware 22 con el paquete unico)",
+    "name": "Tinfoil",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://tinfoil.media/repo/Tinfoil%20Self%20Installer%20%5B050000BADDAD0000%5D%5B20.0%5D%5Bv2%5D.zip",
+    "source_type": "direct_url"
+  },
+  "tinwoo": {
+    "asset_info": {
+      "version": "1.0.28"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "Tinwoo-Installer.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "default": false,
+    "description": "Un instalador de juegos de código abierto.",
+    "name": "Tinwoo Installer",
+    "repo": "mrdude2478/Tinwoo-Release",
+    "source_type": "github_release"
+  },
+  "TsVitch": {
+    "asset_info": {
+      "version": "v0.3.2"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "TsVitch.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/Tsvitch/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "La aplicación convierte tu Nintendo Switch en un dispositivo de transmisión multimedia",
+    "name": "TsVitch",
+    "repo": "giovannimirulla/TsVitch",
+    "source_type": "github_release"
+  },
+  "untitled": {
+    "asset_info": {
+      "version": "v2.0.2"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "Untitled.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/untitled/"
+          }
+        ]
+      }
+    ],
+    "category": "l- Programas Homebrew",
+    "description": "Desinstalador de juegos mal instalados para Nintendo Switch.",
+    "name": "Untitled",
+    "repo": "TOM-BadEN/untitled",
+    "source_type": "github_release"
+  },
+  "Actualizador": {
+    "asset_info": {
+      "version": "4.0.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "m- Programas Homebrew Pkunico (Exclusivo al seleccionar algun paquete unico)",
+    "description": "Programa para actualizar el paquete del grupo desde la consola sin necesidad de una PC",
+    "name": "Actualizador Switch Scene",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Unico/actualizador.zip",
+    "source_type": "direct_url"
+  },
+  "Daybreak": {
+    "asset_info": {
+      "version": "1.0.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "m- Programas Homebrew Pkunico (Exclusivo al seleccionar algun paquete unico)",
+    "description": "Aplicacion escencial para instalar Firmware en la consola , ahora en español",
+    "name": "Daybreak en Español",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Unico/day.zip",
+    "source_type": "direct_url"
+  },
+  "off_switch": {
+    "asset_info": {
+      "version": "v1.0.0"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "easypm.nro",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/off_switch/"
+          },
+          {
+            "action": "find_and_rename",
+            "source_file_pattern": "easypm.nro",
+            "target_filename": "off_switch.nro",
+            "target_path": "/switch/off_switch/"
+          }
+        ]
+      }
+    ],
+    "category": "m- Programas Homebrew Pkunico (Exclusivo al seleccionar algun paquete unico)",
+    "description": "Una forma sencilla de apagar o reiniciar tu Nintendo Switch sin tener que mantener pulsado el botón de encendido",
+    "name": "off_switch",
+    "repo": "deneraraujo/easypm",
+    "source_type": "github_release"
+  },
+  "BT_Audio": {
+    "asset_info": {
+      "version": "1.0.2"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "BT_Audio-ovl.ovl",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/.overlays/"
+          },
+          {
+            "action": "find_and_rename",
+            "source_file_pattern": "BT_Audio-ovl.ovl",
+            "target_filename": "25_BT_Audio-ovl.ovl",
+            "target_path": "/switch/.overlays/"
+          }
+        ]
+      }
+    ],
+    "category": "n- Tesla Overlays",
+    "description": "Overlay para conectar o desconectar dispositivos ya emparejados",
+    "name": "BT_Audio-ovl Overlay",
+    "repo": "masagrator/BT_Audio-ovl",
+    "source_type": "github_release"
+  },
+
+  "capturesight": {
+    "asset_info": {
+      "version": "v0.14.0"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "capturesight.ovl",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/.overlays/"
+          },
+          {
+            "action": "find_and_rename",
+            "source_file_pattern": "capturesight.ovl",
+            "target_filename": "27_capturesight.ovl",
+            "target_path": "/switch/.overlays/"
+          }
+        ]
+      }
+    ],
+    "category": "n- Tesla Overlays",
+    "description": "CaptureSight es un overlay para ver datos de Pokémon mientras se juega.",
+    "name": "Capturesight",
+    "repo": "Insektaure/CaptureSight",
+    "source_type": "github_release"
+  },
+  "dns_mitm_manager": {
+    "asset_info": {
+      "version": "0.2.0"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "DNS-MITM_Manager.zip",
+        "processing_steps": [
+          {
+            "action": "find_and_copy",
+            "source_file_pattern": "*.ovl",
+            "target_path": "/switch/.overlays/"
+          },
+          {
+            "action": "find_and_rename",
+            "source_file_pattern": "DNS-MITM_Manager.ovl",
+            "target_filename": "28_DNS-MITM_Manager.ovl",
+            "target_path": "/switch/.overlays/"
+          }
+        ]
+      }
+    ],
+    "category": "n- Tesla Overlays",
+    "description": "Overlay para gestionar la redirección DNS.",
+    "name": "DNS MITM Manager",
+    "repo": "sthetix/DNS-MITM_Manager",
+    "source_type": "github_release"
+  },
+  "edizon_overlay": {
+    "asset_info": {
+      "version": "v1.0.15"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "ovlEdiZon.ovl",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/.overlays/"
+          },
+          {
+            "action": "find_and_rename",
+            "source_file_pattern": "ovlEdiZon.ovl",
+            "target_filename": "3_ovlEdiZon.ovl",
+            "target_path": "/switch/.overlays/"
+          }
+        ]
+      }
+    ],
+    "category": "n- Tesla Overlays",
+    "description": "Overlay de Edizon para controlar los cheats durante el juego.",
+    "name": "Edizon Overlay",
+    "repo": "proferabg/EdiZon-Overlay",
+    "source_type": "github_release"
+  },
+  "FPSLocker": {
+    "asset_info": {
+      "version": "3.3.2"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "FPSLocker.ovl",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/.overlays/"
+          },
+          {
+            "action": "find_and_rename",
+            "source_file_pattern": "FPSLocker.ovl",
+            "target_filename": "21_FPSLocker.ovl",
+            "target_path": "/switch/.overlays/"
+          }
+        ]
+      }
+    ],
+    "category": "n- Tesla Overlays",
+    "description": "Overlay que permite configurar los FPS en los juegos. (IMPORTANTE MARCAR EL SYSMODUL SALTY, DE LO CONTRARIO NO FUNCIONARA)",
+    "name": "FPSLocker Overlay",
+    "repo": "masagrator/FPSLocker",
+    "source_type": "github_release"
+  },
+  "FPSLocker_Parches": {
+    "asset_info": {
+      "version": "3.3.2"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "n- Tesla Overlays",
+    "description": "Parches de 60 fps para juegos para ser usado desde el overlay FPS locker)",
+    "name": "FPSLocker Parches",
+    "processing_steps": [
+      {
+        "action": "find_and_copy",
+        "source_file_pattern": "SaltySD",
+        "target_path": "/"
+      }
+    ],
+    "repo": "https://github.com/masagrator/FPSLocker-Warehouse/archive/refs/heads/v4.zip",
+    "source_type": "direct_url"
+  },
+
+  "Volumen": {
+    "asset_info": {
+      "version": "1.2.2"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "n- Tesla Overlays",
+    "description": "Sirve para aumentar el volumen de las bocinas en modo portatil",
+    "name": "Master Volumen",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      },
+      {
+        "action": "find_and_rename",
+        "source_file_pattern": "MasterVolume.ovl",
+        "target_filename": "4_MasterVolume.ovl",
+        "target_path": "/switch/.overlays/"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/volumen.zip",
+    "source_type": "direct_url"
+  },
+
+  "pkDwich": {
+    "asset_info": {
+      "version": "v1.06"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "pkDwich.ovl",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/.overlays/"
+          },
+          {
+            "action": "find_and_rename",
+            "source_file_pattern": "pkDwich.ovl",
+            "target_filename": "29_pkDwich.ovl",
+            "target_path": "/switch/.overlays/"
+          }
+        ]
+      }
+    ],
+    "category": "n- Tesla Overlays",
+    "description": "Una herramienta para ver las recetas de sándwiches del «Modo Creativo» de Pokémon Scarlet / Violet.",
+    "name": "pkDwich",
+    "repo": "Insektaure/pkDwich",
+    "source_type": "github_release"
+  },
+  "quickntp": {
+    "asset_info": {
+      "version": "1.6.0+r5"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "QuickNTP.ovl",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/.overlays/"
+          },
+          {
+            "action": "find_and_rename",
+            "source_file_pattern": "QuickNTP.ovl",
+            "target_filename": "8_QuickNTP.ovl",
+            "target_path": "/switch/.overlays/"
+          }
+        ]
+      }
+    ],
+    "category": "n- Tesla Overlays",
+    "description": "Overlay para sincronizar el reloj del sistema con un servidor NTP.",
+    "name": "QuickNTP",
+    "repo": "ppkantorski/QuickNTP",
+    "source_type": "github_release"
+  },
+
+  "quickntp_config": {
+    "asset_info": {
+      "version": "1.6.0+r5"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "n- Tesla Overlays",
+    "description": "Configuraciones con lista de servidores para sincronizar el reloj",
+    "name": "QuickNTP Configuraciones",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/QuickNTPconfig.zip",
+    "source_type": "direct_url"
+  },
+  "ReverseNX": {
+    "asset_info": {
+      "version": "2.2.1"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "ReverseNX-RT-ovl.ovl",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/.overlays/"
+          },
+          {
+            "action": "find_and_rename",
+            "source_file_pattern": "ReverseNX-RT-ovl.ovl",
+            "target_filename": "16_ReverseNX-RT-ovl.ovl",
+            "target_path": "/switch/.overlays/"
+          }
+        ]
+      }
+    ],
+    "category": "n- Tesla Overlays",
+    "description": "Overlay para cambiar entre el modo portátil y el modo dock (IMPORTANTE MARCAR EL SYSMODUL SALTY, DE LO CONTRARIO NO FUNCIONARA)",
+    "name": "ReverseNX-RT-ovl Overlay",
+    "repo": "masagrator/ReverseNX-RT",
+    "source_type": "github_release"
+  },
+  "status_monitor_overlay": {
+    "asset_info": {
+      "version": "1.4.0"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "Status-Monitor-Overlay.zip",
+        "processing_steps": [
+          {
+        "action": "unzip_to_root"
+          },
+          {
+            "action": "find_and_rename",
+            "source_file_pattern": "Status-Monitor-Overlay.ovl",
+            "target_filename": "6_Status-Monitor-Overlay.ovl",
+            "target_path": "/switch/.overlays/"
+          }
+        ]
+      }
+    ],
+    "category": "n- Tesla Overlays",
+    "default": false,
+    "description": "Muestra informacion de la consola, las temperaturas y las velocidades de reloj..",
+    "name": "Status Monitor Overlay",
+    "repo": "masagrator/Status-Monitor-Overlay",
+    "source_type": "github_release"
+  },
+  "sysmodules_overlay": {
+    "asset_info": {
+      "version": "v1.5.0"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "ovlSysmodules.ovl",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/.overlays/"
+          },
+          {
+            "action": "find_and_rename",
+            "source_file_pattern": "ovlSysmodules.ovl",
+            "target_filename": "18_ovlSysmodules.ovl",
+            "target_path": "/switch/.overlays/"
+          }
+        ]
+      }
+    ],
+    "category": "n- Tesla Overlays",
+    "description": "Overlay para gestionar, apagar y encender los módulos del sistema.",
+    "name": "Sysmodules Overlay",
+    "repo": "ppkantorski/ovl-sysmodules",
+    "source_type": "github_release"
+  },
+  "Accesos_Switch": {
+    "asset_info": {
+      "version": "v22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "o- Tesla Overlays Pkunico (Exclusivo al seleccionar algun paquete unico)",
+    "description": "Overlay que permite reinicar la switch desde el menu tesla, asi como cargar otros sistemas, abrir la sd en hekate o reinicar en hekate de manera rapida",
+    "name": "Accesos Switch",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/accesos.zip",
+    "source_type": "direct_url"
+  },
+  "Menu_Ultrahand": {
+    "asset_info": {
+      "version": "v2.4.1"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "p- Menu Overlays",
+    "description": "(KeyCombo ZL+ZR+DDOWN) El menu ultrahand es una evolucion del menu tesla para controlar y usar los overlays, asi como permitir la construccion de paquetes personalizados)",
+    "name": "Menu Overlay Ultrahand",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/menuHand.zip",
+    "source_type": "direct_url"
+  },
+  "Menu_SwitchScene": {
+    "asset_info": {
+      "version": "1.0.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "p- Menu Overlays",
+    "description": "(KeyCombo ZL+ZR+L+R) El menu switch scene es un fork del menu ultrahand para controlar y usar los overlays, añadiendo rendimiento y mejoras)",
+    "name": "Menu Switch Scene (Exlusivo Pk Unico)",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/menuScene.zip",
+    "source_type": "direct_url"
+  },
+  "BootSoundNX": {
+    "asset_info": {
+      "version": "v1.2.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "q- Sysmoduls",
+    "description": "Un sysmodul que reproduce un sonido al arrancar la Nintendo Switch",
+    "name": "BootSoundNX",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Unico/BootSoundNX.zip",
+    "source_type": "direct_url"
+  },
+  "Emuiibo": {
+    "asset_info": {
+      "version": "1.1.3"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "emuiibo.zip",
+        "processing_steps": [
+          {
+            "action": "find_and_copy",
+            "source_file_pattern": "contents/",
+            "target_path": "/atmosphere/"
+          },
+          {
+            "action": "find_and_copy",
+            "source_file_pattern": "emuiibo/",
+            "target_path": "/"
+          },
+          {
+            "action": "find_and_copy",
+            "source_file_pattern": ".overlays/",
+            "target_path": "/switch/"
+          },
+          {
+            "action": "find_and_rename",
+            "source_file_pattern": "emuiibo.ovl",
+            "target_filename": "1_emuiibo.ovl",
+            "target_path": "/switch/.overlays/"
+          }
+        ]
+      }
+    ],
+    "category": "q- Sysmoduls",
+    "description": "Sistema de amiibo virtuales (emulación de amiibo) para Nintendo Switch",
+    "name": "Emuiibo",
+    "repo": "XorTroll/emuiibo",
+    "source_type": "github_release"
+  },
+  "Fizeau": {
+    "asset_info": {
+      "version": "v2.8.2"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "Fizeau-2.8.2-309b628.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          },
+          {
+            "action": "find_and_rename",
+            "source_file_pattern": "Fizeau.ovl",
+            "target_filename": "5_Fizeau.ovl",
+            "target_path": "/switch/.overlays/"
+          }
+        ]
+      }
+    ],
+    "category": "q- Sysmoduls",
+    "description": "(Incluye Overlay) Sysmodul para ajustar el color de la pantalla de tu Nintendo Switch",
+    "name": "Fizeau + Overlay",
+    "repo": "averne/Fizeau",
+    "source_type": "github_release"
+  },
+  "Fizeau_Configuracion": {
+    "asset_info": {
+      "version": "1.9.18"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "q- Sysmoduls",
+    "description": "Configuracion lista para activar desde el overlay de fizeau, para mejorar los colores en pantalla)",
+    "name": "Fizeau Configuracion Mejora Colores",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/ConfigFizeau.zip",
+    "source_type": "direct_url"
+  },
+  "LDNmitm": {
+    "asset_info": {
+      "version": "v1.21.1"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "ldn_mitm.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          },
+          {
+            "action": "find_and_rename",
+            "source_file_pattern": "ldnmitm_config.ovl",
+            "target_filename": "19_ldnmitm_config.ovl",
+            "target_path": "/switch/.overlays/"
+          }
+        ]
+      }
+    ],
+    "category": "q- Sysmoduls",
+    "description": "Un sysmodul que modifica la conexion local para permitir juego en la red por Lanplay.",
+    "name": "LDNmitm",
+    "repo": "DefenderOfHyrule/ldn_mitm",
+    "source_type": "github_release"
+  },
+  "mission_control_1": {
+    "asset_info": {
+      "version": "v0.15.1"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "q- Sysmoduls Mission Control",
+    "description": "Sysmodul que permite utilizar otros mandos de consola en tu Switch.",
+    "name": "Mission Control",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/ndeadly/MissionControl/releases/download/v0.15.1/MissionControl-0.15.1-master-bb54b872.zip",
+    "source_type": "direct_url"
+  },
+
+  "mission_control_2": {
+    "asset_info": {
+      "version": "v0.15.1 Beta"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "q- Sysmoduls Mission Control",
+    "description": "Permite el uso de Controles Xbox Series S/X, USB 3.0 no permitido, Version Beta",
+    "name": "Mission Control BETA",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/TE/releases/download/Main/MissionControl15.1Beta.zip",
+    "source_type": "direct_url"
+  },
+
+  "NX_FanControl": {
+    "asset_info": {
+      "version": "1.0.5+"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "NXFanControl.zip",
+        "processing_steps": [
+          {
+            "action": "find_and_copy",
+            "source_file_pattern": "exefs.nsp",
+            "target_path": "/atmosphere/contents/00FF0000B378D640/"
+          },
+          {
+            "action": "find_and_copy",
+            "source_file_pattern": "toolbox.json",
+            "target_path": "/atmosphere/contents/00FF0000B378D640/"
+          },
+          {
+            "action": "find_and_copy",
+            "source_file_pattern": "Nx-FanControl.ovl",
+            "target_path": "/switch/.overlays/"
+          },
+          {
+            "action": "find_and_rename",
+            "source_file_pattern": "Nx-FanControl.ovl",
+            "target_filename": "10_Nx-FanControl.ovl",
+            "target_path": "/switch/.overlays/"
+          }
+        ]
+      }
+    ],
+    "category": "q- Sysmoduls",
+    "description": "Un sysmodul para personalizar la velocidad del ventilador de la consola",
+    "name": "NX-FanControl",
+    "repo": "dominatorul/NX-FanControl",
+    "source_type": "github_release"
+  },
+  "SaltyNX": {
+    "asset_info": {
+      "version": "1.8.1"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "q- Sysmoduls",
+    "description": "Sysmodule para insertar códigos personalizados en juegos, como ejemplo necasario para aplicaciones conocidas como NX-FPS y ReverseNX-RT, entre otros",
+    "name": "SaltyNX",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/SaltyNX.zip",
+    "source_type": "direct_url"
+  },
+
+  "sys_ftpd": {
+    "asset_info": {
+      "version": "recomp"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "sys-ftpd.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "q- Sysmoduls",
+    "description": "Sysmodul para pemitir un servidor FTP ligero que se ejecuta en segundo plano en tu Nintendo Switch.",
+    "name": "sys ftpd",
+    "repo": "auggeythecat/sys-ftpd-Recompiled",
+    "source_type": "github_release"
+  },
+  "sys_clk": {
+    "asset_info": {
+      "version": "N/A"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "q- Sysmoduls",
+    "description": "Sysmodul que permite hacer overclock a la consola (incluye overlay para el menu ultrahand/Switch Scene)",
+    "name": "Sys-Clock + Overlay",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Unico/ModuloClock.zip",
+    "source_type": "direct_url"
+  },
+  "sys_con": {
+    "asset_info": {
+      "version": "1.6.2"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "sys-con-1.6.2.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "q- Sysmoduls",
+    "description": "Un sysmodul personalizado que permite utilizar mandos alambricos de otros fabricantes",
+    "name": "sys-con",
+    "repo": "o0Zz/sys-con",
+    "source_type": "github_release"
+  },
+  "Sys_Con_Configuracion": {
+    "asset_info": {
+      "version": "1.6.2"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "q- Sysmoduls",
+    "description": "Configuracion para arreglar compatibilidad con adaptadores de controles de Gamecube y otras mejoras generales)",
+    "name": "Sys-Con Configuracion",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/configSysCon.zip",
+    "source_type": "direct_url"
+  },
+
+  "SysDvr_USB": {
+    "asset_info": {
+      "version": "v6.3"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "SysDVR-USB-Only.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "q- Sysmoduls",
+    "description": "Sysmodul que permite trasmitir y grabar el juego en ejecución en un PC a través de una conexión USB",
+    "name": "SysDvr",
+    "repo": "exelix11/SysDVR",
+    "source_type": "github_release"
+  },
+  "SysDvr_1_Parches": {
+    "asset_info": {
+      "version": "v6.3"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "q- Sysmoduls",
+    "description": "Parches para permitir que la mayoria de juegos se puedan trassmitir y grabar por SysDvr)",
+    "name": "SysDvr Parches",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/exelix11/dvr-patches/releases/download/fw-22.0/dvr-patches.zip",
+    "source_type": "direct_url"
+  },
+  "SysTicon": {
+    "asset_info": {
+      "version": "1.0.7"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "sys-ticon.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "q- Sysmoduls",
+    "description": "Un sysmodul para sustituir iconos, títulos, editoriales y versiones de visualización en qlaunch",
+    "name": "SysTicon",
+    "repo": "masagrator/sys-ticon",
+    "source_type": "github_release"
+  },
+  "SysTune": {
+    "asset_info": {
+      "version": "v2.1.0+r2"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "sdout.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          },
+          {
+            "action": "find_and_rename",
+            "source_file_pattern": "sys-tune-overlay.ovl",
+            "target_filename": "7_sys-tune-overlay.ovl",
+            "target_path": "/switch/.overlays/"
+          }
+        ]
+      }
+    ],
+    "category": "q- Sysmoduls",
+    "description": "Reproductor de audio en segundo plano para Nintendo Switch",
+    "name": "SysTune",
+    "repo": "ppkantorski/sys-tune",
+    "source_type": "github_release"
+  },
+  "HorizonOverclock": {
+    "asset_info": {
+      "version": "2.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "r- Sysmodul Exclusivo PkUnico",
+    "description": "Sysmodul dedicado para hacer Overclock real, selecciona un paquete unico para poder elegirlo",
+    "name": "Horizon Overclock (Sys-Clk Mod)",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Unico/HorizonOverclock.zip",
+    "source_type": "direct_url"
+  },
+  "Amiibos_Emuiibo": {
+    "asset_info": {
+      "version": "Abril 2026"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "s- Amiibos",
+    "description": "Amiibos listos para usarse con emuiibo, con imagenes previas, todos los amiibos lanzados hasta abril 2026)",
+    "name": "Amiibos para el sysmodul Emuiibo",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/iibo.zip",
+    "source_type": "direct_url"
+  },
+  "DowngradeFixer": {
+    "asset_info": {
+      "version": "1.0.1"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "DowngradeFixer-1.0.1.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "t- Payloads",
+    "description": "Un payload diseñado para solucionar los problemas que surgen al bajar la versión del firmware de Nintendo Switch de la 21.0.0 a la 20.5.0.",
+    "name": "DowngradeFixer",
+    "repo": "sthetix/DowngradeFixer",
+    "source_type": "github_release"
+  },
+  "FuseCheck": {
+    "asset_info": {
+      "version": "1.0.3"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "FuseCheck-1.0.3.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "t- Payloads",
+    "description": "Comprueba el número de fusibles quemados de la consola comparándolo con la versión del firmware instalado para determinar si el firmware oficial (OFW) se iniciará correctamente.",
+    "name": "FuseCheck",
+    "repo": "sthetix/FuseCheck",
+    "source_type": "github_release"
+  },
+  "HWFLY": {
+    "asset_info": {
+      "version": "1.1.1"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "hwfly_toolbox.bin",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/bootloader/payloads/"
+          }
+        ]
+      }
+    ],
+    "category": "t- Payloads",
+    "description": "Un payload para administrar el modchip HWFLY.",
+    "name": "HWFLY Modchip Toolbox",
+    "repo": "hwfly-nx/hwfly-toolbox",
+    "source_type": "github_release"
+  },
+  "Instinct_NX": {
+    "asset_info": {
+      "version": "N/A"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "t- Payloads",
+    "description": "Un payload para administrar el  modchip Instinct NX.",
+    "name": "Instinct NX Toolbox",
+    "processing_steps": [
+      {
+        "action": "copy_file",
+        "target_path": "/bootloader/payloads/"
+      }
+    ],
+    "repo": "https://github.com/sthetix/FILES/raw/main/Instinct-NX_toolbox.bin",
+    "source_type": "direct_url"
+  },
+  "Lockpick_RCM": {
+    "asset_info": {
+      "version": "1.9.18"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "t- Payloads",
+    "description": "Un payload que genera las key de cifrado para su uso en Switch (prod.keys, title.keys, dev.keys)",
+    "name": "Lockpick_RCM",
+    "processing_steps": [
+      {
+        "action": "copy_file",
+        "target_path": "/bootloader/payloads/"
+      }
+    ],
+    "repo": "https://github.com/impeeza/Lockpick_RCMDecScots/releases/download/1.9.18/Lockpick_RCM.bin",
+    "source_type": "direct_url"
+  },
+  "NetMan": {
+    "asset_info": {
+      "version": "1.0.0"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "NetMan.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "t- Payloads",
+    "description": "Una sencilla herramienta de configuración de red que permite gestionar los modos online y offline.",
+    "name": "NetMan",
+    "repo": "sthetix/NetMan",
+    "source_type": "github_release"
+  },
+  "picofly": {
+    "asset_info": {
+      "version": "N/A"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "t- Payloads",
+    "description": "Un payload para administrar el  modchip Picofly.",
+    "name": "Picofly Modchip Toolbox",
+    "processing_steps": [
+      {
+        "action": "copy_file",
+        "target_path": "/bootloader/payloads/"
+      },
+      {
+        "action": "find_and_rename",
+        "source_file_pattern": "picofly_toolbox_0.2.bin",
+        "target_filename": "picofly_toolbox.bin",
+        "target_path": "/bootloader/payloads/"
+      }
+    ],
+    "repo": "https://github.com/Ansem-SoD/Picofly/raw/main/Firmwares/picofly_toolbox_0.2.bin",
+    "source_type": "direct_url"
+  },
+  "prodinfo_gen": {
+    "asset_info": {
+      "version": "v1.1.0"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "prodinfo_gen.bin",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/bootloader/payloads/"
+          }
+        ]
+      }
+    ],
+    "category": "t- Payloads",
+    "description": "Un payload para generar la informacion prod.info.",
+    "name": "Prodinfo gen",
+    "repo": "CaramelDunes/prodinfo_gen",
+    "source_type": "github_release"
+  },
+  "TegraExplorer": {
+    "asset_info": {
+      "version": "4.2.0"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "TegraExplorer.bin",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/bootloader/payloads/"
+          }
+        ]
+      }
+    ],
+    "category": "t- Payloads",
+    "description": "Un explorador de archivos basado en payloads para tu switch",
+    "name": "TegraExplorer",
+    "repo": "suchmememanyskill/TegraExplorer",
+    "source_type": "github_release"
+  },
+  "Warmboot_Extractor": {
+    "asset_info": {
+      "version": "1.0.1"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "Warmboot-Extractor-1.0.1.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "t- Payloads",
+    "description": "Un payload que permite extraer el firmware de arranque en caliente del Package1 y guardarlo en una tarjeta SD (Solo consolas V2)",
+    "name": "Warmboot_Extractor",
+    "repo": "sthetix/Warmboot-Extractor",
+    "source_type": "github_release"
+  },
+  "Lockpick_Español": {
+    "asset_info": {
+      "version": "1.9.18"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "u- Payloads solo para usuarios de cualquier PKunico",
+    "description": "Lockpick en español, te ayudara a extraer las llaves de tu consola (prod.keys, title.keys, dev.keys)",
+    "name": "Lockpick_RCM Español",
+    "processing_steps": [
+      {
+        "action": "unzip_to_path",
+        "target_path": "/bootloader/payloads/"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/RCM.zip",
+    "source_type": "direct_url"
+  },
+  "TegraExplorer_Español": {
+    "asset_info": {
+      "version": "4.4.3"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "u- Payloads solo para usuarios de cualquier PKunico",
+    "description": "Tegraexplorer en español, un explorador de archivos basado en payloads para tu switch",
+    "name": "TegraExplorer Español",
+    "processing_steps": [
+      {
+        "action": "unzip_to_path",
+        "target_path": "/bootloader/payloads/"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/explorer.zip",
+    "source_type": "direct_url"
+  },
+  "Firmware_18.1.0 Rebootless": {
+    "asset_info": {
+      "version": "18.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "v- Firmware",
+    "description": "Descarga el firmware 18.1.0 en la carpeta firmware, debes usar daybreak para instalar (OPCIONAL, puedes decargar el firmware desde la consola))",
+    "name": "Firmware 18.1.0 Rebootless",
+    "processing_steps": [
+      {
+        "action": "unzip_to_path",
+        "target_path": "/firmware/"
+      }
+    ],
+    "repo": "https://github.com/THZoria/NX_Firmware/releases/download/18.1.0r/Firmware.18.1.0.Rebootless.zip",
+    "source_type": "direct_url"
+  },
+  "Firmware_19.1.0 Rebootless": {
+    "asset_info": {
+      "version": "19.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "v- Firmware",
+    "description": "Descarga el firmware 19.1.0 en la carpeta firmware, debes usar daybreak para instalar (OPCIONAL, puedes decargar el firmware desde la consola)",
+    "name": "Firmware 19.1.0 Rebootless",
+    "processing_steps": [
+      {
+        "action": "unzip_to_path",
+        "target_path": "/firmware/"
+      }
+    ],
+    "repo": "https://github.com/THZoria/NX_Firmware/releases/download/19.0.1r/Firmware.19.0.1.Rebootless.zip",
+    "source_type": "direct_url"
+  },
+  "Firmware_20.5.0": {
+    "asset_info": {
+      "version": "20.5.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "v- Firmware",
+    "description": "Descarga el firmware 20.5.0 en la carpeta firmware, debes usar daybreak para instalar (OPCIONAL, puedes decargar el firmware desde la consola)",
+    "name": "Firmware 20.5.0",
+    "processing_steps": [
+      {
+        "action": "unzip_to_path",
+        "target_path": "/firmware/"
+      }
+    ],
+    "repo": "https://github.com/THZoria/NX_Firmware/releases/download/20.5.0/Firmware.20.5.0.zip",
+    "source_type": "direct_url"
+  },
+  "Firmware_21.2.0": {
+    "asset_info": {
+      "version": "21.2.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "v- Firmware",
+    "description": "Descarga el firmware 21.2.0 en la carpeta firmware, debes usar daybreak para instalar (OPCIONAL, puedes decargar el firmware desde la consola)",
+    "name": "Firmware 21.2.0",
+    "processing_steps": [
+      {
+        "action": "unzip_to_path",
+        "target_path": "/firmware/"
+      }
+    ],
+    "repo": "https://github.com/THZoria/NX_Firmware/releases/download/21.2.0/Firmware.21.2.0.zip",
+    "source_type": "direct_url"
+  },
+  "Firmware_22.1.0": {
+    "asset_info": {
+      "version": "22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "v- Firmware",
+    "description": "Descarga el firmware 22.1.0 en la carpeta firmware, debes usar daybreak para instalar (OPCIONAL, puedes decargar el firmware desde la consola)",
+    "name": "Firmware 22.1.0",
+    "processing_steps": [
+      {
+        "action": "unzip_to_path",
+        "target_path": "/firmware/"
+      }
+    ],
+    "repo": "https://github.com/THZoria/NX_Firmware/releases/download/22.1.0/Firmware.22.1.0.zip",
+    "source_type": "direct_url"
+  },
+  "Tico": {
+    "asset_info": {
+      "version": "0.7.1 Alpha"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "w- Emuladores",
+    "description": " (Incluye Cores Listos) Nuevo multi-emulador para la switch, emula Gamecube y Wii",
+    "name": "Tico",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/Ticonfig.zip",
+    "source_type": "direct_url"
+  },
+
+  "TicoBro": {
+    "asset_info": {
+      "version": "1.0.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "w- Emuladores",
+    "description": "TicoBro es una tienda gratuita para bajar juegos para Tico directamente desde la consola",
+    "name": "TicoBro + Servidores",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/TE/releases/download/Main/TicoBro.zip",
+    "source_type": "direct_url"
+  },
+
+  "TicoWiiMenu": {
+    "asset_info": {
+      "version": "1.0.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "w- Emuladores",
+    "description": "Agrega la posibilidad de Instalar Wads cargando el menu Wii desde Tico",
+    "name": "Tico Wii Menu",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/TE/releases/download/Main/ticoWiiMenu.zip",
+    "source_type": "direct_url"
+  },
+
+
+  "TicoWiiRemapper": {
+    "asset_info": {
+      "version": "1.0.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "w- Emuladores",
+    "description": "Permite configurar los botones de los controles para la emulacion de Wii",
+    "name": "Tico Wii Remapper",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/TE/releases/download/Main/TicoWiiRemapper.zip",
+    "source_type": "direct_url"
+  },
+
+  "TicoGCRemapper": {
+    "asset_info": {
+      "version": "1.0.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "w- Emuladores",
+    "description": "Permite configurar los botones de los controles para la emulacion de GC",
+    "name": "Tico GC Remapper",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/TE/releases/download/Main/TicoGCRemapper.zip",
+    "source_type": "direct_url"
+  },
+
+
+
+  "Acropolis": {
+    "asset_info": {
+      "version": "22.1.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "x- Extras",
+    "description": "Acropolis es la herramienta de trabajo para la gestión y la carga de mods y complementos para el juego Super Smash Bros",
+    "name": "Acropolis + Skyline",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/Enlace/releases/download/Recursos_22/accesos.zip",
+    "source_type": "direct_url"
+  },
+  "Zelda_DUSK": {
+    "asset_info": {
+      "version": "1.0.0"
+    },
+    "asset_pattern": "not_applicable",
+    "category": "y- Ports",
+    "description": "Duskl es port de ingeniería inversa de Twilight Princess.",
+    "name": "Zelda Twilight Princess + Rom - DUSK",
+    "processing_steps": [
+      {
+        "action": "unzip_to_root"
+      }
+    ],
+    "repo": "https://github.com/Luiscetina/TE/releases/download/Main/ZeldaDusk.zip",
+    "source_type": "direct_url"
+  }
+}
+'''
+
+COMPONENTES_DATA = json.loads(_COMPONENTES_JSON)
