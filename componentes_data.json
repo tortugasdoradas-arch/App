@@ -1954,7 +1954,7 @@
   },
   "status_monitor_overlay": {
     "asset_info": {
-      "version": "1.4.0"
+      "version": "1.4.1"
     },
     "asset_patterns": [
       {
